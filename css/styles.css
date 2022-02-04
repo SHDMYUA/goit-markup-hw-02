@@ -1,32 +1,33 @@
 /*   General   */
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color:#757575;
+  --accent-text-color: #2196f3;
+  --bg-primary-color: #ffffff;
+  --bg-secondary-color: #f5f4fa;
+  --bg-footer-color: #2f303a;
+}
 
 body {
-  color: #212121;
+  color: var(--primary-text-color)
+  background-color: var(--bg-primary-color);
   font-family: "Roboto", sans-serif;
-  background: #ffffff;
-  /* background secondary color: #F5F4FA; */
+  letter-spacing: 0.03em;
 }
 
 .list {
   list-style: none;
 }
 
-/*    Navigation   */
-
-.nav {
-  background: #ffffff;
-}
-
 /*    Section LOGO    */
 
 .logo {
+  color: var(--accent-text-color);
+
   font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  color: #2196f3;
+  line-height: 1.19;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-decoration: none;
 }
@@ -46,60 +47,67 @@ body {
 /* Section menu */
 
 .menu {
-  font-style: normal;
+  color: inherit;
+
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: inherit;
 }
 
 .contacts .link {
-  text-decoration: none;
   color: #757575;
+
+  text-decoration: none;
 }
+
+.pages .menu.current {
+  color: var(--accent-text-color);
+} 
+
 
 .pages .menu:hover,
 .pages .menu:focus,
 .contacts .link:hover,
 .contacts .link:focus {
-  color: #2196f3;
+color: var(--accent-text-color);
 }
 
 .portfolio .link {
-  background-color: #f5f4fa;
+  background-color: var(--bg-secondary-color);
   cursor: pointer;
 }
 
 .portfolio .link:hover,
 .portfolio .link:focus {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 
 /* Section hero */
 
 .hero-title {
-  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: var(--bg-footer-color);
+
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
-  text-align: center;
+  line-height: 1.36;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #2f303a;
 }
 
 .button {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--accent-text-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
 
 /*    Hiden title   */
@@ -119,68 +127,58 @@ body {
 
 /* Section our benefits */
 
-.benefits {
-  background: #ffffff;
-}
-
-.benefits .title {
-  font-style: normal;
-  font-weight: bold;
+.benefits .title,
+.examples .title {
+  
+  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.benefits .content {
-  font-style: normal;
-  font-weight: normal;
+.benefits .content,
+.examples .content {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
-/* Section experiance */
+/* Section team and experiance*/
 
 .development-title,
 .team-title {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
 .team {
-  background: #f5f4fa;
+  background-color: var(--bg-secondary-color);
 }
 
-.team-member {
-  font-style: normal;
+.team-member ,
+.member-position {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
 .member-position {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-  color: #757575;
+  font-weight: 400;
+  color: var(--secondary-text-color);
 }
 
 /* Section footer */
 
 .address .post {
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #ffffff;
@@ -188,14 +186,13 @@ body {
 
 .address .item {
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71px;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer {
-  background: #2f303a;
+  background: var(--bg-footer-color);
 }
