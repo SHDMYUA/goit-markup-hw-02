@@ -82,7 +82,7 @@ color: var(--accent-text-color);
 .portfolio .link:hover,
 .portfolio .link:focus {
   color: #ffffff;
-  background-color: var(--accent-color);
+  background-color: var(--accent-text-color);
 }
 
 /* Section hero */
