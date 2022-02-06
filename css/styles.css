@@ -28,7 +28,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   text-decoration: none;
 }
 
@@ -58,7 +58,10 @@ body {
 
 .contacts .link {
   color: #757575;
-
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   text-decoration: none;
 }
 
@@ -77,7 +80,7 @@ color: var(--accent-text-color);
 .portfolio .link {
   background-color: var(--bg-secondary-color);
   cursor: pointer;
-  
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -109,7 +112,8 @@ color: var(--accent-text-color);
 .button {
   color: #ffffff;
   background-color: var(--accent-text-color);
-
+   cursor: pointer;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -133,21 +137,32 @@ color: var(--accent-text-color);
 
 /* Section our benefits */
 
-.benefits .title,
+.benefits .title {
+
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+}
+
 .examples .title {
   
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
-.benefits .content,
-.examples .content {
+.benefits .content{
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+
+}
+.examples .content {
+
+  font-size: 16px;
+  line-height: 1.87;
   color: var(--secondary-text-color);
 }
 
@@ -198,6 +213,15 @@ color: var(--accent-text-color);
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
+
+.address .post:hover,
+.address .post:focus {
+}
+
+.address .item:hover,
+.address .item:focus {
+}
+
 
 .footer {
   background: var(--bg-footer-color);
