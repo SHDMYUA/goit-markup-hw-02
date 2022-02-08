@@ -216,10 +216,12 @@ text-transform: uppercase;
 
 .address .post:hover,
 .address .post:focus {
+  color: var(--accent-text-color);
 }
 
 .address .item:hover,
 .address .item:focus {
+  color: var(--accent-text-color);
 }
 
 
